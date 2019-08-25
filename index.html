@@ -121,7 +121,7 @@
 
         <article class="st-cover u-relative u-floatLeft firts">
     <div class="st-cover-inner u-relative u-bgBlack">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(assets/images/not-image.jpg?v=b0c66b1f9f)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(assets/images/not-image.jpg?v=cd5bd9f7a6)"></div>
 
         <header class="st-cover-header u-absolute u-textColorWhite zindex2">
             <div class="flow-meta u-fontSizeSmallest u-flexCenter">
@@ -130,7 +130,7 @@
         <span class="point">/</span>
     
 
-    <span><time class="datetime" datetime=" 2019-08-20 ">4 days ago</time></span>
+    <span><time class="datetime" datetime=" 2019-08-20 ">5 days ago</time></span>
 </div>
 
             <h2 class="st-cover-title u-marginBottom10 u-lineHeightTight u-titleSpacing u-fontSizeLarge u-md-fontSize22">
@@ -257,7 +257,7 @@
             <div class="col s12 m4 l3">
                 <article class="story u-flex u-relative ">
     <a href="enable-dark-mode-on-your-mac-with-this-tool/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(assets/images/not-image.jpg?v=b0c66b1f9f)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(assets/images/not-image.jpg?v=cd5bd9f7a6)"></div>
             </a>
 
     <div class="story-body u-flexColumn u-marginTop20 u-relative">
@@ -295,7 +295,7 @@
             <div class="col s12 m4 l3">
                 <article class="story u-flex u-relative ">
     <a href="update-your-enctitlekeys-with-an-homebrew/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(assets/images/not-image.jpg?v=b0c66b1f9f)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(assets/images/not-image.jpg?v=cd5bd9f7a6)"></div>
             </a>
 
     <div class="story-body u-flexColumn u-marginTop20 u-relative">
@@ -367,7 +367,7 @@
 
     <div class="widget-twitter sidebar-items u-hide">
         <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold">
-            <span class="u-paddingBottom10 u-inlineBlock">Recents Tweets</span>
+            <span class="u-paddingBottom10 u-inlineBlock">Recent Tweets</span>
         </h3>
     </div>
 </aside>
@@ -427,6 +427,20 @@
 
     <script>
 	var disqusShortName = 'samplasion';
+    
+    var followSocialMedia = {
+        'github': ['https://github.com/Samplasion','Samplasion'],
+    };
+
+    var searchSettings = {
+        key: 'bd101b03e80a923efd58edd277',
+        url: 'http://localhost:2368',
+    };
+    
+    var twitterFeed = {
+        name: 'Samplasion',
+        number: 2,
+    };
 </script>
 
 <script>
@@ -434,23 +448,26 @@
 </script>
 
 <script>
-    document.body.innerHTML = document.body.innerHTML
-      .replace(/pngp?n?g/g, "png")
-      .replace(/jpgj?p?g/g, "jpg")
-      .replace(/localhost\:\d{4}/g, "samplasion.github.io")
-
-    document.head.innerHTML = document.head.innerHTML
-      .replace(/pngp?n?g/g, "png")
-      .replace(/jpgj?p?g/g, "jpg")
-      .replace(/localhost\:\d{4}/g, "samplasion.github.io")
+    function replaceStuff(part) {
+    	part.innerHTML = part.innerHTML
+            .replace(/pngp?n?g/g, "png")
+            .replace(/jpgj?p?g/g, "jpg")
+        	.replace("favicon.ico", "favicon.png");
+        
+        if (!window.location.href.includes("localhost"))
+          part.replace(/localhost\:\d{4}/g, "samplasion.github.io")
+    }
+    
+    replaceStuff(document.body);
+    replaceStuff(document.head);
 </script>
 
-    <script src="assets/scripts/main.js?v=b0c66b1f9f" defer></script>
+    <script src="assets/scripts/main.js?v=cd5bd9f7a6" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="assets/scripts/search.js?v=b0c66b1f9f" defer></script>
+    <script src="assets/scripts/search.js?v=cd5bd9f7a6" defer></script>
 
         <script>var maxPages = parseInt('1');</script>
-        <script src="assets/scripts/pagination.js?v=b0c66b1f9f" defer></script>
+        <script src="assets/scripts/pagination.js?v=cd5bd9f7a6" defer></script>
 
     
 </body>

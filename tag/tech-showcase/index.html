@@ -178,7 +178,7 @@
 
     <div class="widget-twitter sidebar-items u-hide">
         <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold">
-            <span class="u-paddingBottom10 u-inlineBlock">Recents Tweets</span>
+            <span class="u-paddingBottom10 u-inlineBlock">Recent Tweets</span>
         </h3>
     </div>
 </aside>
@@ -238,6 +238,20 @@
 
     <script>
 	var disqusShortName = 'samplasion';
+    
+    var followSocialMedia = {
+        'github': ['https://github.com/Samplasion','Samplasion'],
+    };
+
+    var searchSettings = {
+        key: 'bd101b03e80a923efd58edd277',
+        url: 'http://localhost:2368',
+    };
+    
+    var twitterFeed = {
+        name: 'Samplasion',
+        number: 2,
+    };
 </script>
 
 <script>
@@ -245,23 +259,26 @@
 </script>
 
 <script>
-    document.body.innerHTML = document.body.innerHTML
-      .replace(/pngp?n?g/g, "png")
-      .replace(/jpgj?p?g/g, "jpg")
-      .replace(/localhost\:\d{4}/g, "samplasion.github.io")
-
-    document.head.innerHTML = document.head.innerHTML
-      .replace(/pngp?n?g/g, "png")
-      .replace(/jpgj?p?g/g, "jpg")
-      .replace(/localhost\:\d{4}/g, "samplasion.github.io")
+    function replaceStuff(part) {
+    	part.innerHTML = part.innerHTML
+            .replace(/pngp?n?g/g, "png")
+            .replace(/jpgj?p?g/g, "jpg")
+        	.replace("favicon.ico", "favicon.png");
+        
+        if (!window.location.href.includes("localhost"))
+          part.replace(/localhost\:\d{4}/g, "samplasion.github.io")
+    }
+    
+    replaceStuff(document.body);
+    replaceStuff(document.head);
 </script>
 
-    <script src="../../assets/scripts/main.js?v=b0c66b1f9f" defer></script>
+    <script src="../../assets/scripts/main.js?v=cd5bd9f7a6" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../../assets/scripts/search.js?v=b0c66b1f9f" defer></script>
+    <script src="../../assets/scripts/search.js?v=cd5bd9f7a6" defer></script>
 
         <script>var maxPages = parseInt('1');</script>
-        <script src="../../assets/scripts/pagination.js?v=b0c66b1f9f" defer></script>
+        <script src="../../assets/scripts/pagination.js?v=cd5bd9f7a6" defer></script>
 
     
 </body>

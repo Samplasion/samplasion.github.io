@@ -17,10 +17,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="PC - SamplasionWeb">
     <meta property="og:url" content="http://localhost:2368/tag/pc/">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="http://localhost:2368/content/images/2019/08/samsung-desktop-computer-500x500-1.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PC - SamplasionWeb">
     <meta name="twitter:url" content="http://localhost:2368/tag/pc/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2019/08/samsung-desktop-computer-500x500-1.jpeg">
     <meta name="twitter:site" content="@samplasion">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
     
     <script type="application/ld+json">
 {
@@ -37,6 +41,12 @@
         }
     },
     "url": "http://localhost:2368/tag/pc/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2019/08/samsung-desktop-computer-500x500-1.jpeg",
+        "width": 500,
+        "height": 500
+    },
     "name": "PC",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -117,7 +127,9 @@
 <div class="mapache-ad-author-tag-top u-textAlignCenter">  </div>
 
 <section class="extreme-container">
-        <div class="tag u-relative u-textAlignCenter u-textAlignCenter u-flexCenter u-marginTop30 u-marginBottom30 u-textColorDarker">
+        <div class="tag u-relative u-textAlignCenter u-textAlignCenter u-flexCenter u-marginTop30 u-marginBottom30 u-textColorWhite u-textShadow has-image">
+                <img class="u-absolute u-image u-block lazyload" src="../../content/images/size/w600/2019/08/samsung-desktop-computer-500x500-1.jpeg" srcset="../../content/images/size/w30/2019/08/samsung-desktop-computer-500x500-1.jpeg" data-srcset="/content/images/size/w300/2019/08/samsung-desktop-computer-500x500-1.jpeg 300w, /content/images/size/w600/2019/08/samsung-desktop-computer-500x500-1.jpeg 600w, /content/images/size/w1000/2019/08/samsung-desktop-computer-500x500-1.jpeg 1000w" data-sizes="(max-width: 1000px) 400px, 700px" alt="">
+                <div class="u-absolute0 zindex2" style="background:#000;opacity:.5"></div>
 
             <div class="tag-body u-relative u-container zindex3 u-fontSize20">
                 <h1 class="tag-title u-fontSize40 u-md-fontSizeLarger u-textCapitalize">PC</h1>
@@ -178,7 +190,7 @@
 
     <div class="widget-twitter sidebar-items u-hide">
         <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold">
-            <span class="u-paddingBottom10 u-inlineBlock">Recents Tweets</span>
+            <span class="u-paddingBottom10 u-inlineBlock">Recent Tweets</span>
         </h3>
     </div>
 </aside>
@@ -238,6 +250,20 @@
 
     <script>
 	var disqusShortName = 'samplasion';
+    
+    var followSocialMedia = {
+        'github': ['https://github.com/Samplasion','Samplasion'],
+    };
+
+    var searchSettings = {
+        key: 'bd101b03e80a923efd58edd277',
+        url: 'http://localhost:2368',
+    };
+    
+    var twitterFeed = {
+        name: 'Samplasion',
+        number: 2,
+    };
 </script>
 
 <script>
@@ -245,23 +271,26 @@
 </script>
 
 <script>
-    document.body.innerHTML = document.body.innerHTML
-      .replace(/pngp?n?g/g, "png")
-      .replace(/jpgj?p?g/g, "jpg")
-      .replace(/localhost\:\d{4}/g, "samplasion.github.io")
-
-    document.head.innerHTML = document.head.innerHTML
-      .replace(/pngp?n?g/g, "png")
-      .replace(/jpgj?p?g/g, "jpg")
-      .replace(/localhost\:\d{4}/g, "samplasion.github.io")
+    function replaceStuff(part) {
+    	part.innerHTML = part.innerHTML
+            .replace(/pngp?n?g/g, "png")
+            .replace(/jpgj?p?g/g, "jpg")
+        	.replace("favicon.ico", "favicon.png");
+        
+        if (!window.location.href.includes("localhost"))
+          part.replace(/localhost\:\d{4}/g, "samplasion.github.io")
+    }
+    
+    replaceStuff(document.body);
+    replaceStuff(document.head);
 </script>
 
-    <script src="../../assets/scripts/main.js?v=b0c66b1f9f" defer></script>
+    <script src="../../assets/scripts/main.js?v=cd5bd9f7a6" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../../assets/scripts/search.js?v=b0c66b1f9f" defer></script>
+    <script src="../../assets/scripts/search.js?v=cd5bd9f7a6" defer></script>
 
         <script>var maxPages = parseInt('1');</script>
-        <script src="../../assets/scripts/pagination.js?v=b0c66b1f9f" defer></script>
+        <script src="../../assets/scripts/pagination.js?v=cd5bd9f7a6" defer></script>
 
     
 </body>
