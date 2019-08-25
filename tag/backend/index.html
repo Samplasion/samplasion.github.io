@@ -75,6 +75,9 @@
         <a href="../../tags/" class="navigation-link u-fontSizeSmaller u-block " itemprop="url">Tag Cloud</a>
     </li>
     <li itemprop="name" role="menuitem">
+        <a href="../../tags-alp/" class="navigation-link u-fontSizeSmaller u-block " itemprop="url">Tag Cloud (Alphabetical)</a>
+    </li>
+    <li itemprop="name" role="menuitem">
         <a href="../../author/samplasion/" class="navigation-link u-fontSizeSmaller u-block " itemprop="url">Author</a>
     </li>
 
@@ -108,6 +111,9 @@
         <a href="../../tags/" class="navigation-link u-fontSizeSmaller u-block " itemprop="url">Tag Cloud</a>
     </li>
     <li itemprop="name" role="menuitem">
+        <a href="../../tags-alp/" class="navigation-link u-fontSizeSmaller u-block " itemprop="url">Tag Cloud (Alphabetical)</a>
+    </li>
+    <li itemprop="name" role="menuitem">
         <a href="../../author/samplasion/" class="navigation-link u-fontSizeSmaller u-block " itemprop="url">Author</a>
     </li>
 
@@ -134,7 +140,7 @@
             <div class="tag-body u-relative u-container zindex3 u-fontSize20">
                 <h1 class="tag-title u-fontSize40 u-md-fontSizeLarger u-textCapitalize">Backend</h1>
                 <p class="u-marginTop20 u-fontSizeBase">Total 1 post</p>
-                
+                <p class="tag-description u-marginTop20 u-maxWidth1000 u-marginAuto">Posts about the backend used to run the blog.</p>
             </div>
         </div>
 
@@ -146,7 +152,7 @@
 
 <article class="story u-flex u-relative ">
     <a href="../../welcome-ghost/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../../assets/images/not-image.jpg?v=cd5bd9f7a6)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../../assets/images/not-image.jpg?v=6853cfeeb5)"></div>
             </a>
 
     <div class="story-body u-flexColumn u-marginTop20 u-relative">
@@ -171,6 +177,12 @@
     </div>
     <aside class="sidebar col-right sidebar-sticky u-hide-before-lg">
 
+    <div id="blogAbout" style="display:none;" class="sidebar-items u-marginBottom30">
+        <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold"><span class="u-paddingBottom10 u-inlineBlock">SamplasionWeb</span></h3>
+        <p>My personal blog.</p>
+    </div>
+
+
     <div class="mapache-ad u-textAlignCenter sidebar-items u-marginBottom30">  </div>
 
     
@@ -178,7 +190,7 @@
     <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold"><span class="u-paddingBottom10 u-inlineBlock">Tag Cloud</span></h3>
         <a href="../nintendo/" title="Nintendo" class="button tag-button">Nintendo</a>
         <a href="../cia/" title="Cia" class="button tag-button">Cia</a>
-        <a href="../freeshop/" title="freeShop" class="button tag-button">freeShop</a>
+        <a href="../freeshop/" title="FreeShop" class="button tag-button">FreeShop</a>
         <a href="../tutorial/" title="Tutorial" class="button tag-button">Tutorial</a>
         <a href="../updates/" title="Updates" class="button tag-button">Updates</a>
         <a href="../injections/" title="Injections" class="button tag-button">Injections</a>
@@ -285,12 +297,16 @@
     replaceStuff(document.head);
 </script>
 
-    <script src="../../assets/scripts/main.js?v=cd5bd9f7a6" defer></script>
+<script>
+    document.querySelector("#blogAbout").style.display = "block";
+</script>
+
+    <script src="../../assets/scripts/main.js?v=6853cfeeb5" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../../assets/scripts/search.js?v=cd5bd9f7a6" defer></script>
+    <script src="../../assets/scripts/search.js?v=6853cfeeb5" defer></script>
 
         <script>var maxPages = parseInt('1');</script>
-        <script src="../../assets/scripts/pagination.js?v=cd5bd9f7a6" defer></script>
+        <script src="../../assets/scripts/pagination.js?v=6853cfeeb5" defer></script>
 
     
 </body>
