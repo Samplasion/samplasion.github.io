@@ -92,6 +92,11 @@
     <meta name="generator" content="Ghost 2.28">
     <link rel="alternate" type="application/rss+xml" title="SamplasionWeb" href="../rss/index.html">
     <style>:root{--color-primary:#c43235;--primary-color:#c43235;--header-logo-color:#fff;--header-bg-color:#c43235;--header-menu-color:#ffbbb4;--header-menu-color-hover:#fff0ec;--header-color-divider:#e6867c;--header-color:#ffbbb4;--header-color-hover:#fff0ec;--footer-color-link:#b56566;--composite-color:#ff5b5e;--podcast-button-color:#c43235;--newsletter-color:#c43235;--newsletter-bg-color:rgba(196,50,53,0.6)}</style>
+<style>
+    :root{
+        --color-primary: #c43235 !important;
+    }
+</style>
 </head>
 <body class="is-article ">
     <header class="header u-sizeFullWidth">
@@ -156,7 +161,7 @@
 
         <div class="sideNav-follow js-social-media u-fontSize20 u-paddingTop20 u-paddingLeft20 u-paddingRight20">
             
-             <a title="Twitter @samplasion" href="https://twitter.com/samplasion" target="_blank" rel="noopener noreferrer" class="i-twitter"></a>
+             <a title="@samplasion" href="https://twitter.com/samplasion" target="_blank" rel="noopener noreferrer" class="i-twitter"></a>
         </div>
     </div>
 </aside>
@@ -183,7 +188,7 @@
     <div class="u-paddingLeft15 u-textColorNormal u-flex1 u-fontSizeSmaller u-lineHeight1">
 
         <div class="u-block">
-            <time class="datetime" datetime=" 2018-07-09 ">Published a year ago</time>
+            <time class="datetime" datetime=" 2018-07-09 ">Published <span class="prettydate" data-date-format="YYYY-MM-DDTHH:mm:ss+0100">2018-07-09T09:18:00+0100</span></time>
             <span class="point">—</span>
             <span class="readingTime">2 min read</span>
         </div>
@@ -391,7 +396,7 @@
             <div class="col s12 m6 l4">
                 <article class="story u-flex u-relative ">
     <a href="../enable-dark-mode-on-your-mac-with-this-tool/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../assets/images/not-image.jpg?v=a953742a68)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../assets/images/not-image.jpg?v=fcb0050c1e)"></div>
             </a>
 
     <div class="story-body u-flexColumn u-marginTop20 u-relative">
@@ -401,9 +406,10 @@
         <span class="point">/</span>
     
 
-    <span><time class="datetime" datetime=" 2017-11-09 ">2 years ago</time></span>
-</div>
-        <h2 class="story-title u-fontSize20 u-lineHeightTight u-marginBottom10"><a href="../enable-dark-mode-on-your-mac-with-this-tool/">Enable Dark Mode on your Mac with this tool</a></h2>
+    <span><time class="datetime" datetime=" 2017-11-09 ">
+        <span class="prettydate" data-date-format="YYYY-MM-DDTHH:mm:ss+0100">2017-11-09T19:18:00+0100</span>
+    </time></span>
+</div>        <h2 class="story-title u-fontSize20 u-lineHeightTight u-marginBottom10"><a href="../enable-dark-mode-on-your-mac-with-this-tool/">Enable Dark Mode on your Mac with this tool</a></h2>
     </div>
 </article>
             </div>
@@ -422,9 +428,10 @@
         <span class="point">/</span>
     
 
-    <span><time class="datetime" datetime=" 2018-10-15 ">10 months ago</time></span>
-</div>
-        <h2 class="story-title u-fontSize20 u-lineHeightTight u-marginBottom10"><a href="../how-to-install-npm-modules-on-glitch/">How to install NPM modules on Glitch</a></h2>
+    <span><time class="datetime" datetime=" 2018-10-15 ">
+        <span class="prettydate" data-date-format="YYYY-MM-DDTHH:mm:ss+0100">2018-10-15T15:38:00+0100</span>
+    </time></span>
+</div>        <h2 class="story-title u-fontSize20 u-lineHeightTight u-marginBottom10"><a href="../how-to-install-npm-modules-on-glitch/">How to install NPM modules on Glitch</a></h2>
     </div>
 </article>
             </div>
@@ -447,7 +454,7 @@
         <div class="extreme-container u-flexCenter u-flexColumn">
             <aside class="follow js-social-media u-textColorWhite u-fontSize20 u-textAlignCenter">
                 
-                <a class="i-twitter" title="Twitter @samplasion" href="https://twitter.com/samplasion" target="_blank" rel="noopener noreferrer"></a>
+                <a class="i-twitter" title="@samplasion" href="https://twitter.com/samplasion" target="_blank" rel="noopener noreferrer"></a>
                 
             </aside>
             <ul class="footer-menu u-textUppercase u-textAlignCenter u-marginTop20 u-hide"></ul>
@@ -487,6 +494,7 @@
     <div class="rocket u-hide-before-md i-arrow-round-up u-flexCenter u-flexContentCenter u-fontSize40"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../assets/scripts/prettydate.js?v=fcb0050c1e"></script>
 
     <script>var siteUrl = 'http://localhost:2368';</script>
 
@@ -540,10 +548,40 @@
     document.querySelector("#blogAbout").style.display = "block";
 </script>
 
-    <script src="../assets/scripts/main.js?v=a953742a68" defer></script>
+    <script src="../assets/scripts/main.js?v=fcb0050c1e" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../assets/scripts/search.js?v=a953742a68" defer></script>
+    <script src="../assets/scripts/search.js?v=fcb0050c1e" defer></script>
 
+
+    <script>
+        function loadPD() {
+            $(".prettydate").prettydate({
+                messages: {
+                    second: "Just now",
+                    seconds: "%s seconds %s",
+                    minute: "1 minute %s",
+                    minutes: "%s minutes %s",
+                    hour: "1 hour %s",
+                    hours: "%s hours %s",
+                    day: "1 day %s",
+                    days: "%s days %s",
+                    week: "1 week %s",
+                    weeks: "%s weeks %s",
+                    month: "1 month %s",
+                    months: "%s months %s",
+                    year: "1 year %s",
+                    years: "%s years %s",
+
+                    // Extra
+                    yesterday: "Yesterday",
+                    beforeYesterday: "The day before yesterday",
+                    tomorrow: "Tomorrow",
+                    afterTomorrow: "The day after tomorrow"
+                }
+            });
+        }
+        loadPD();
+    </script>
 
     <script>
     (function(d, s, id) {
