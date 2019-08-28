@@ -498,7 +498,7 @@
         	.replace("favicon.ico", "favicon.png");
         
         if (!window.location.host.includes("localhost"))
-          part.replace(/localhost\:\d{4}/g, "samplasion.github.io")
+          part.innerHTML = part.innerHTML.replace(/localhost\:\d{4}/g, "samplasion.github.io")
     }
     $(document).ready(() => {
         replaceStuff(document.body);
