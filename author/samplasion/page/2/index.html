@@ -20,6 +20,15 @@
     :root{
         --color-primary: #c43235 !important;
     }
+    
+    blockquote {
+        text-align: left;
+        border-left: 3px solid red;
+    }
+    
+    blockquote:before {
+        left: 30px;
+    }
 </style>
 </head>
 <body class=" is-author">
@@ -115,7 +124,7 @@
             <div class="author-follow buttonSet">
                 
                 
-                <a class="button u-borderRadius2 u-fontSizeSmall rs" href="https://feedly.com/i/subscription/feed/http://localhost:2368/author/samplasion/rss/" target="_blank" rel="noopener noreferrer"><i class="i-rss"></i> 11 posts</a>
+                <a class="button u-borderRadius2 u-fontSizeSmall rs" href="https://feedly.com/i/subscription/feed/http://localhost:2368/author/samplasion/rss/" target="_blank" rel="noopener noreferrer"><i class="i-rss"></i> 12 posts</a>
             </div>
         </div>
     </div>
@@ -135,6 +144,29 @@
     <div class="col-left">
         <div class="story-feed">
             <div class="story-feed-content">
+                    <hr class="hr-list">
+
+<article class="story u-flex u-relative ">
+    <a href="../../../../update-your-enctitlekeys-with-an-homebrew/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../../../../assets/images/not-image.jpg?v=90a1d1d0b7)"></div>
+            </a>
+
+    <div class="story-body u-flexColumn u-marginTop20 u-relative">
+        <div class="flow-meta u-fontSizeSmallest u-flexCenter">
+    
+        <a href="../../../../tag/nintendo/" class="flow-meta-cat link--underline u-fontWeightMedium u-textUppercase u-fontSize13 u-relative zindex4">Nintendo</a>
+        <span class="point">/</span>
+    
+
+    <span><time class="datetime" datetime=" 2017-11-05 ">
+        <span class="prettydate" data-date-format="YYYY-MM-DDTHH:mm:ss+0100">2017-11-05T21:44:00+0100</span>
+    </time></span>
+</div>        <h2 class="u-fontSizeLarge u-lineHeightTight u-marginBottom10"><a href="../../../../update-your-enctitlekeys-with-an-homebrew/">Update your encTitleKeys with an homebrew</a></h2>
+        <div class="story-lower u-relative u-overflowHidden u-flexColumnTop">
+            <a href="../../../../update-your-enctitlekeys-with-an-homebrew/" class="story-excerpt u-block">In this post, we'll take a look to a way to update the title keys for freeShop.</a>
+        </div>
+    </div>
+</article>
                     <hr class="hr-list">
 
 <article class="story u-flex u-relative ">
@@ -180,15 +212,15 @@
     <div class="sidebar-items u-marginBottom30">
     <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold"><span class="u-paddingBottom10 u-inlineBlock">Tag Cloud</span></h3>
         <a href="../../../../tag/nintendo/" title="Nintendo" class="button tag-button">Nintendo</a>
+        <a href="../../../../tag/tutorial/" title="Tutorial" class="button tag-button">Tutorial</a>
         <a href="../../../../tag/cia/" title="Cia" class="button tag-button">Cia</a>
         <a href="../../../../tag/freeshop/" title="FreeShop" class="button tag-button">FreeShop</a>
-        <a href="../../../../tag/tutorial/" title="Tutorial" class="button tag-button">Tutorial</a>
+        <a href="../../../../tag/mac/" title="Mac" class="button tag-button">Mac</a>
         <a href="../../../../tag/blog/" title="Blog" class="button tag-button">Blog</a>
         <a href="../../../../tag/meta/" title="Meta" class="button tag-button">Meta</a>
         <a href="../../../../tag/updates/" title="Updates" class="button tag-button">Updates</a>
         <a href="../../../../tag/injections/" title="Injections" class="button tag-button">Injections</a>
         <a href="../../../../tag/apple/" title="Apple" class="button tag-button">Apple</a>
-        <a href="../../../../tag/mac/" title="Mac" class="button tag-button">Mac</a>
 </div>
 
     <div class="widget-twitter sidebar-items u-hide">
@@ -248,7 +280,7 @@
     <div class="rocket u-hide-before-md i-arrow-round-up u-flexCenter u-flexContentCenter u-fontSize40"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../../../assets/scripts/prettydate.js?v=fcb0050c1e"></script>
+    <script src="../../../../assets/scripts/prettydate.js?v=90a1d1d0b7"></script>
 
     <script>var siteUrl = 'http://localhost:2368';</script>
 
@@ -258,6 +290,8 @@
     var followSocialMedia = {
         'github': ['https://github.com/Samplasion','Samplasion'],
     };
+    
+    var sidebarText = "hety"
 
     var searchSettings = {
         key: 'bd101b03e80a923efd58edd277',
@@ -268,9 +302,6 @@
         name: 'Samplasion',
         number: 2,
     };
-    
-    /* 01. Title for home - optional */
-    var homeTitle = 'Hola este es mi Titulo';
 
     /* 02. Home BTN <SUBSCRIBE> - optional */
     var homeBtn = {
@@ -302,16 +333,41 @@
     document.querySelector("#blogAbout").style.display = "block";
 </script>
 
-    <script src="../../../../assets/scripts/main.js?v=fcb0050c1e" defer></script>
+<script>
+    var prettyDateOptions = {
+        messages: {
+            second: "Just now",
+            seconds: "%s seconds %s",
+            minute: "1 minute %s",
+            minutes: "%s minutes %s",
+            hour: "1 hour %s",
+            hours: "%s hours %s",
+            day: "1 day %s",
+            days: "%s days %s",
+            week: "1 week %s",
+            weeks: "%s weeks %s",
+            month: "1 month %s",
+            months: "%s months %s",
+            year: "1 year %s",
+            years: "%s years %s",
+
+            // Extra
+            yesterday: "1 day %s",
+            beforeYesterday: "2 days %s",
+        }
+    }
+</script>
+
+    <script src="../../../../assets/scripts/main.js?v=90a1d1d0b7" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../../../../assets/scripts/search.js?v=fcb0050c1e" defer></script>
+    <script src="../../../../assets/scripts/search.js?v=90a1d1d0b7" defer></script>
 
         <script>var maxPages = parseInt('2');</script>
-        <script src="../../../../assets/scripts/pagination.js?v=fcb0050c1e" defer></script>
+        <script src="../../../../assets/scripts/pagination.js?v=90a1d1d0b7" defer></script>
 
     <script>
         function loadPD() {
-            $(".prettydate").prettydate({
+            $(".prettydate").prettydate(prettyDateOptions || {
                 messages: {
                     second: "Just now",
                     seconds: "%s seconds %s",

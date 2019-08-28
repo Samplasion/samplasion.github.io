@@ -52,6 +52,15 @@
     :root{
         --color-primary: #c43235 !important;
     }
+    
+    blockquote {
+        text-align: left;
+        border-left: 3px solid red;
+    }
+    
+    blockquote:before {
+        left: 30px;
+    }
 </style>
 </head>
 <body class=" is-tag">
@@ -183,15 +192,15 @@
     <div class="sidebar-items u-marginBottom30">
     <h3 class="sidebar-title u-fontSizeBase u-textColorDarker u-marginBottom20 u-fontWeightBold"><span class="u-paddingBottom10 u-inlineBlock">Tag Cloud</span></h3>
         <a href="../nintendo/" title="Nintendo" class="button tag-button">Nintendo</a>
+        <a href="../tutorial/" title="Tutorial" class="button tag-button">Tutorial</a>
         <a href="../cia/" title="Cia" class="button tag-button">Cia</a>
         <a href="../freeshop/" title="FreeShop" class="button tag-button">FreeShop</a>
-        <a href="../tutorial/" title="Tutorial" class="button tag-button">Tutorial</a>
+        <a href="../mac/" title="Mac" class="button tag-button">Mac</a>
         <a href="../blog/" title="Blog" class="button tag-button">Blog</a>
         <a href="../meta/" title="Meta" class="button tag-button">Meta</a>
         <a href="../updates/" title="Updates" class="button tag-button">Updates</a>
         <a href="../injections/" title="Injections" class="button tag-button">Injections</a>
         <a href="../apple/" title="Apple" class="button tag-button">Apple</a>
-        <a href="../mac/" title="Mac" class="button tag-button">Mac</a>
 </div>
 
     <div class="widget-twitter sidebar-items u-hide">
@@ -251,7 +260,7 @@
     <div class="rocket u-hide-before-md i-arrow-round-up u-flexCenter u-flexContentCenter u-fontSize40"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../assets/scripts/prettydate.js?v=fcb0050c1e"></script>
+    <script src="../../assets/scripts/prettydate.js?v=90a1d1d0b7"></script>
 
     <script>var siteUrl = 'http://localhost:2368';</script>
 
@@ -261,6 +270,8 @@
     var followSocialMedia = {
         'github': ['https://github.com/Samplasion','Samplasion'],
     };
+    
+    var sidebarText = "hety"
 
     var searchSettings = {
         key: 'bd101b03e80a923efd58edd277',
@@ -271,9 +282,6 @@
         name: 'Samplasion',
         number: 2,
     };
-    
-    /* 01. Title for home - optional */
-    var homeTitle = 'Hola este es mi Titulo';
 
     /* 02. Home BTN <SUBSCRIBE> - optional */
     var homeBtn = {
@@ -305,16 +313,41 @@
     document.querySelector("#blogAbout").style.display = "block";
 </script>
 
-    <script src="../../assets/scripts/main.js?v=fcb0050c1e" defer></script>
+<script>
+    var prettyDateOptions = {
+        messages: {
+            second: "Just now",
+            seconds: "%s seconds %s",
+            minute: "1 minute %s",
+            minutes: "%s minutes %s",
+            hour: "1 hour %s",
+            hours: "%s hours %s",
+            day: "1 day %s",
+            days: "%s days %s",
+            week: "1 week %s",
+            weeks: "%s weeks %s",
+            month: "1 month %s",
+            months: "%s months %s",
+            year: "1 year %s",
+            years: "%s years %s",
+
+            // Extra
+            yesterday: "1 day %s",
+            beforeYesterday: "2 days %s",
+        }
+    }
+</script>
+
+    <script src="../../assets/scripts/main.js?v=90a1d1d0b7" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../../assets/scripts/search.js?v=fcb0050c1e" defer></script>
+    <script src="../../assets/scripts/search.js?v=90a1d1d0b7" defer></script>
 
         <script>var maxPages = parseInt('1');</script>
-        <script src="../../assets/scripts/pagination.js?v=fcb0050c1e" defer></script>
+        <script src="../../assets/scripts/pagination.js?v=90a1d1d0b7" defer></script>
 
     <script>
         function loadPD() {
-            $(".prettydate").prettydate({
+            $(".prettydate").prettydate(prettyDateOptions || {
                 messages: {
                     second: "Just now",
                     seconds: "%s seconds %s",
