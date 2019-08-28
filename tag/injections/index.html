@@ -324,12 +324,13 @@
             .replace(/jpgj?p?g/g, "jpg")
         	.replace("favicon.ico", "favicon.png");
         
-        if (!window.location.href.includes("localhost"))
+        if (!window.location.host.includes("localhost"))
           part.replace(/localhost\:\d{4}/g, "samplasion.github.io")
     }
-    
-    replaceStuff(document.body);
-    replaceStuff(document.head);
+    $(document).ready(() => {
+        replaceStuff(document.body);
+        replaceStuff(document.head);
+    });
 </script>
 
 <script>
