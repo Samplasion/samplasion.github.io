@@ -242,9 +242,6 @@
             <a href="https://pinterest.com/pin/create/button/?url=http://localhost:2368/how-to-create-your-own-own-chromium-release-for-starters/" aria-label="Share on Pinterest" class="button--circle i-pinterest bg-pinterest" onclick="window.open(this.href, 'share-pinterest', 'width=600,height=480');return false;">
             </a>
         </li>
-        <li>
-            <div class="js-toggle-comments u-pointer button--circle i-chat u-hide post-comments-show" style="margin-top:8px"></div>
-        </li>
     </ul>
 </aside>
 
@@ -383,7 +380,7 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
 
     <div class="post-comments-wrap u-padding15">
         <div class="mapache-disqus-loanding u-textAlignCenter u-marginTop30">Loading...</div>
-        <div id="disqus_thread" class="mapache-disqus u-hide"></div>
+        <div id="disqusn_thread" class="mapache-disqus u-hide"></div>
     </div>
 </div>
 
@@ -496,7 +493,7 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
             <div class="col s12 m6 l4">
                 <article class="story u-flex u-relative ">
     <a href="../enable-dark-mode-on-your-mac-with-this-tool/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../assets/images/not-image.jpg?v=ca06a1add1)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../assets/images/not-image.jpg?v=daaff92ef3)"></div>
             </a>
 
     <div class="story-body u-flexColumn u-marginTop20 u-relative">
@@ -594,7 +591,7 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
     <div class="rocket u-hide-before-md i-arrow-round-up u-flexCenter u-flexContentCenter u-fontSize40"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../assets/scripts/prettydate.js?v=ca06a1add1"></script>
+    <script src="../assets/scripts/prettydate.js?v=daaff92ef3"></script>
 
     <script>var siteUrl = 'http://localhost:2368';</script>
 
@@ -673,9 +670,9 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
     }
 </script>
 
-    <script src="../assets/scripts/main.js?v=ca06a1add1" defer></script>
+    <script src="../assets/scripts/main.js?v=daaff92ef3" defer></script>
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../assets/scripts/search.js?v=ca06a1add1" defer></script>
+    <script src="../assets/scripts/search.js?v=daaff92ef3" defer></script>
 
 
     <script>
@@ -712,7 +709,7 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
     (function(d, s, id) {
         if (typeof disqusShortName === 'undefined') return;
 
-        $('.post-comments-show').removeClass('u-hide');
+        // $('.post-comments-show').removeClass('u-hide');
 
         var disqus_config = function () {
             this.page.url = 'http://localhost:2368/how-to-create-your-own-own-chromium-release-for-starters/';
@@ -721,15 +718,22 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
 
         /* Comments Count */
         var count = d.createElement(s);
-        count.src = 'https://'+disqusShortName+'.disqus.com/count.js';
+        count.src = 'https://'+disqusShortName+'.disqus.com/embed.js';
         count.id = 'dsq-count-scr';
         count.async = true;
         (d.head || d.body).appendChild(count);
 
+        var sep = d.getElementsByClassName("post-footer-hr")[0];
+
+        var cmts = document.createElement("div");
+        cmts.id = "disqus_thread";
+        cmts.style = "padding-top:10px;";
+        sep.parentNode.appendChild(cmts);
+
         // Toggle Comments
         $('.js-toggle-comments').on('click', function (e) {
             e.preventDefault();
-            $('body').toggleClass('has-comments').removeClass('is-showNavMob')
+            // $('body').toggleClass('has-comments').removeClass('is-showNavMob')
 
             /* Call Disqus */
             var js, djs = d.getElementsByTagName(s)[0];
@@ -747,9 +751,12 @@ $ gclient sync</code></pre><!--kg-card-end: code--><h4 id="create-a-release-buil
             js.id = id;
             js.src = 'https://'+disqusShortName+'.disqus.com/embed.js';
             js.async = true;
-            djs.parentNode.insertBefore(js, djs);
+            // djs.parentNode.insertBefore(js, djs);
         });
     }(document, 'script', 'disqus-js'));
+    $(document).ready(() => {
+        $(".post-comments-show.js-toggle-comments").hide()
+    });
 </script>
 
 </body>
