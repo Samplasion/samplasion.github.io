@@ -86,9 +86,61 @@
     pre {
         overflow: scroll;
     }
+    
+    .kg-bookmark-container {
+        display: flex;
+        flex-wrap: wrap;
+        color: black;
+        text-decoration: none;
+        border: 2px solid blue;
+    }
+
+    .kg-bookmark-content {
+        flex-basis: 0;
+        flex-grow: 999;
+        min-width: 50%;
+        padding: 20px;
+    }
+
+    .kg-bookmark-title {
+        font-weight: 600;
+    }
+
+    .kg-bookmark-description,
+    .kg-bookmark-metadata {
+        margin-top: 12px;
+    }
+
+    .kg-bookmark-thumbnail {
+        flex-basis: 15rem;
+        flex-grow: 1;
+    }
+
+
+    .kg-bookmark-thumbnail img {
+        vertical-align: bottom;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .kg-bookmark-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        vertical-align: bottom;
+    }
+
+    .kg-bookmark-author:after {
+        content: "•";
+        margin: 0 6px;
+    }
 </style>
 </head>
 <body class=" is-tag">
+    <div id="wrapfabtest">
+        <div class="adBanner" style=".adBanner {background-color: transparent; height: 1px; width: 1px;}">
+        </div>
+    </div>
     <header class="header u-sizeFullWidth">
     <div class="header-wrap u-flexCenter u-relative">
         <a class="header-logo u-inlineBlock u-flex0" href="../../">
@@ -169,7 +221,7 @@
 
 <article class="story u-flex u-relative ">
     <a href="../../enable-dark-mode-on-your-mac-with-this-tool/" class="story-image u-relative u-overflowHidden u-bgGray image-hover">
-            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../../assets/images/not-image.jpg?v=4b8a8697dc)"></div>
+            <div class="u-absolute0 u-bgCover u-block" style="background-image:url(../../assets/images/not-image.jpg?v=dde9f6aafd)"></div>
             </a>
 
     <div class="story-body u-flexColumn u-marginTop20 u-relative">
@@ -291,7 +343,7 @@
     <div class="rocket u-hide-before-md i-arrow-round-up u-flexCenter u-flexContentCenter u-fontSize40"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../../assets/scripts/prettydate.js?v=4b8a8697dc"></script>
+    <script src="../../assets/scripts/prettydate.js?v=dde9f6aafd"></script>
 
     <script>var siteUrl = 'http://localhost:2368';</script>
 
@@ -358,12 +410,15 @@
     $(".copyright").html($(".copyright").html() + "<br>Header photo by Oliver Spicer on Unsplash")
 </script>
 
-    <script src="../../assets/scripts/main.js?v=4b8a8697dc" defer></script>
+    <script src="../../assets/scripts/main.js?v=dde9f6aafd" defer></script>
+
+    <script src="../../assets/scripts/adblockdetector.js?v=dde9f6aafd" defer></script>
+
     <script src="https://unpkg.com/@tryghost/content-api@1.2.5/umd/content-api.min.js" defer></script>
-    <script src="../../assets/scripts/search.js?v=4b8a8697dc" defer></script>
+    <script src="../../assets/scripts/search.js?v=dde9f6aafd" defer></script>
 
         <script>var maxPages = parseInt('1');</script>
-        <script src="../../assets/scripts/pagination.js?v=4b8a8697dc" defer></script>
+        <script src="../../assets/scripts/pagination.js?v=dde9f6aafd" defer></script>
 
     <script>
         function loadPD() {
@@ -396,4 +451,6 @@
     </script>
 
     
+
+    <!-- script src="/assets/scripts/reloaddisqus.js?v=dde9f6aafd" defer></script -->
 </body>
