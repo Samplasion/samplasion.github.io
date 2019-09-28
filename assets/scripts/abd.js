@@ -15,7 +15,7 @@ $(document).ready(function(){
            .css("align-items", "center")
            .css("color", "white");
         
-        aab.html("<h1>You're using an ad blocker</h1><p>That's ok, I also do so. But could you consider unblocking me? I promise my ads aren't invasive. :)</p>");
+        aab.html(`<h1>${abt}</h1><p>${abp}</p>`);
         
         $(".mapache-ad.sidebar-items > ins").hide();
         $(".mapache-ad.sidebar-items").prepend(aab);
@@ -26,7 +26,7 @@ $(document).ready(function(){
             .css("display", "auto")
             .css("padding", "15px");
 
-        banner_aab.html("<h3>You're using an ad blocker</h3><p>That's ok, I also do so. But could you consider unblocking me? I promise my ads aren't invasive. :)</p>");
+        banner_aab.html(`<h3>${abt}</h3><p>${abp}</p>`);
 
         $("#disqus_thread").before(banner_aab, "<hr />");
     }
